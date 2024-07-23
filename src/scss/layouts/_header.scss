@@ -20,7 +20,6 @@
                             &:hover {
                                 color: $color-139cd5;
                             }
-
                         }
                     }
                 }
@@ -40,17 +39,32 @@
                         }
 
                         &.active {
-                            a {
+                            .nav-header-a {
                                 color: $color-139cd5;
                             }
                         }
 
 
-                        a {
+                        .nav-header-a {
                             color: $color-013945;
 
                             &:hover {
                                 color: $color-139cd5;
+                            }
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                height: 15px;
+                                width: 0%;
+                                opacity: 0;
+                                visibility: hidden;
+                                background-color: pink;
+
+                                @include media-breakpoint-down(lg) {
+                                    display: none;
+                                }
                             }
                         }
 
@@ -79,27 +93,6 @@
                 .navigation {
                     .nav {
                         li {
-                            &.menu-active {
-                                a {
-                                    &::after {
-                                        content: '';
-                                        position: absolute;
-                                        bottom: 0;
-                                        left: 0;
-                                        height: 15px;
-                                        width: 0%;
-                                        opacity: 0;
-                                        visibility: hidden;
-                                        background-color: pink;
-
-                                        @include media-breakpoint-down(lg) {
-                                            display: none;
-                                        }
-                                    }
-
-                                }
-                            }
-
                             .mega-menu {
                                 opacity: 1;
                                 visibility: visible;

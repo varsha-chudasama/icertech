@@ -17782,41 +17782,35 @@ button,
 .header .header-section .nav-header .navigation .nav li:last-child {
   margin-right: 0 !important;
 }
-.header .header-section .nav-header .navigation .nav li.active a {
+.header .header-section .nav-header .navigation .nav li.active .nav-header-a {
   color: #139cd5;
 }
-.header .header-section .nav-header .navigation .nav li a {
+.header .header-section .nav-header .navigation .nav li .nav-header-a {
   color: #013945;
 }
-.header .header-section .nav-header .navigation .nav li a:hover {
+.header .header-section .nav-header .navigation .nav li .nav-header-a:hover {
   color: #139cd5;
+}
+.header .header-section .nav-header .navigation .nav li .nav-header-a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 15px;
+  width: 0%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: pink;
+}
+@media (max-width: 991.98px) {
+  .header .header-section .nav-header .navigation .nav li .nav-header-a::after {
+    display: none;
+  }
 }
 .header .header-section .nav-header .navigation .nav li .mega-menu {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-30px);
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab-container .tab-menu ul li {
-  margin-right: 25px;
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab-container .tab-menu ul li:last-child {
-  margin-right: 0px !important;
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab-container .tab-menu ul li a {
-  height: 74px;
-  padding: 0px 140px;
-  background-color: #fff;
-  color: #139cd5;
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab-container .tab-menu ul li a.active {
-  background-color: #013945;
-  color: #fff;
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab {
-  display: none;
-}
-.header .header-section .nav-header .navigation .nav li .mega-menu .tab-active {
-  display: block;
 }
 .header .header-section .my-acc-logo {
   width: 20px;
@@ -17828,6 +17822,24 @@ button,
   opacity: 1;
   visibility: visible;
   transform: translateY(0px);
+}
+
+.tab-container .tab-menu a {
+  height: 74px;
+  background-color: #fff;
+  color: #139cd5;
+}
+.tab-container .tab-menu a.active {
+  background-color: #013945;
+  color: #fff;
+}
+
+.tab {
+  display: none;
+}
+
+.tab-active {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
