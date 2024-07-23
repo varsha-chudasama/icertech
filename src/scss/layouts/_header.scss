@@ -1,0 +1,125 @@
+.header {
+    .header-section {
+        .top-header {
+            .top-navigation {
+                .nav {
+                    li {
+                        &:last-child {
+                            margin-right: 0 !important;
+                        }
+
+                        &.active {
+                            a {
+                                color: $color-139cd5;
+                            }
+                        }
+
+                        a {
+                            color: $white;
+
+                            &:hover {
+                                color: $color-139cd5;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-header {
+            .header-logo {
+                width: 170px;
+            }
+
+            .navigation {
+                .nav {
+                    li {
+                        &:last-child {
+                            margin-right: 0 !important;
+                        }
+
+                        &.active {
+                            a {
+                                color: $color-139cd5;
+                            }
+                        }
+
+
+                        a {
+                            color: $color-013945;
+
+                            &:hover {
+                                color: $color-139cd5;
+                            }
+                        }
+
+                        .mega-menu {
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translateY(-30px);
+
+                            .tab-container {
+                                .tab-menu ul {
+                                    li {
+                                        margin-right: 25px;
+
+                                        &:last-child {
+                                            margin-right: 0px !important;
+                                        }
+
+                                        a {
+                                            height: 74px;
+                                            padding: 0px 140px;
+                                            background-color: $white;
+                                            color: $color-139cd5;
+
+                                            &.active {
+                                                background-color: $color-013945;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tab {
+                                display: none;
+                            }
+
+                            .tab-active {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .my-acc-logo {
+            width: 20px;
+        }
+
+        .basket-logo {
+            width: 23px;
+        }
+    }
+
+    &.header-hover {
+        .header-section {
+            .nav-header {
+                .navigation {
+                    .nav {
+                        li {
+                            .mega-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
