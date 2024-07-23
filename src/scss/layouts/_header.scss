@@ -58,38 +58,6 @@
                             opacity: 0;
                             visibility: hidden;
                             transform: translateY(-30px);
-
-                            .tab-container {
-                                .tab-menu ul {
-                                    li {
-                                        margin-right: 25px;
-
-                                        &:last-child {
-                                            margin-right: 0px !important;
-                                        }
-
-                                        a {
-                                            height: 74px;
-                                            padding: 0px 140px;
-                                            background-color: $white;
-                                            color: $color-139cd5;
-
-                                            &.active {
-                                                background-color: $color-013945;
-                                                color: $white;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            .tab {
-                                display: none;
-                            }
-
-                            .tab-active {
-                                display: block;
-                            }
                         }
                     }
                 }
@@ -111,6 +79,27 @@
                 .navigation {
                     .nav {
                         li {
+                            &.menu-active {
+                                a {
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        height: 15px;
+                                        width: 0%;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        background-color: pink;
+
+                                        @include media-breakpoint-down(lg) {
+                                            display: none;
+                                        }
+                                    }
+
+                                }
+                            }
+
                             .mega-menu {
                                 opacity: 1;
                                 visibility: visible;

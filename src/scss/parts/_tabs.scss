@@ -1,0 +1,22 @@
+.tab-container {
+    .tab-menu {
+        a {
+            height: 74px;
+            background-color: $white;
+            color: $color-139cd5;
+
+            &.active {
+                background-color: $color-013945;
+                color: $white;
+            }
+        }
+    }
+}
+
+.tab {
+    display: none;
+}
+
+.tab-active {
+    display: block;
+}
