@@ -17764,6 +17764,18 @@ button,
   height: 100px;
 }
 
+.shop-card {
+  height: 458px;
+}
+.shop-card .shop-card-img {
+  height: 303px;
+  width: 303px;
+}
+.shop-card:hover {
+  background-color: #139cd5 !important;
+  color: #fff !important;
+}
+
 .header .header-section .top-header .top-navigation .nav li:last-child {
   margin-right: 0 !important;
 }
@@ -17832,6 +17844,19 @@ button,
 .tab-container .tab-menu a.active {
   background-color: #013945;
   color: #fff;
+}
+.tab-container .tab-menu a.tab-btn {
+  background-color: #139cd5;
+  color: #fff;
+}
+.tab-container .tab-menu a.tab-btn.active {
+  background-color: #013945;
+  color: #fff;
+}
+.tab-container .tab-menu a.tab-btn:hover {
+  background-color: transparent;
+  color: #139cd5;
+  border: 1px solid #139cd5;
 }
 
 .tab {

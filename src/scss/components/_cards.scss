@@ -19,3 +19,17 @@
         height: 100px;
     }
 }
+
+.shop-card {
+    height: 458px;
+
+    .shop-card-img {
+        height: 303px;
+        width:303px;
+    }
+
+    &:hover {
+        background-color: $color-139cd5 !important;
+        color: $white !important    ;
+    }
+}
