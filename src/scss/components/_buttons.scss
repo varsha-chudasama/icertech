@@ -16,6 +16,10 @@ button,
     border: 2px solid transparent;
     transition: all 0.2s ease-in-out;
 
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+
     &:hover {
         border: 2px solid $white;
         background-color: transparent;
@@ -36,5 +40,3 @@ button,
         }
     }
 }
-
-

@@ -50,6 +50,7 @@
     background-color: $color-ffffff30;
 }
 
+
 // text ===============================
 
 
@@ -105,8 +106,6 @@
     color: $color-ffffff30;
 }
 
-
-
 // font=============================
 
 .font15 {
@@ -147,6 +146,26 @@
 
 .font48 {
     font-size: $font48;
+}
+
+// line-height =====================
+
+.leading24 {
+    line-height: $leading24;
+}
+
+.leading16 {
+    line-height: $leading16;
+}
+
+// radius
+
+.radius30 {
+    border-radius: 30px;
+}
+
+.radius15 {
+    border-radius: 15px;
 }
 
 @include media-breakpoint-down(lg) {
@@ -198,28 +217,11 @@
         line-height: $leading16;
     }
 
-}
+    .res-bg-transparent {
+        background-color: transparent !important;
+    }
 
-
-// line-height =====================
-
-.leading24 {
-    line-height: $leading24;
-}
-
-.leading16 {
-    line-height: $leading16;
-}
-
-
-
-
-// radius
-
-.radius30 {
-    border-radius: 30px;
-}
-
-.radius15 {
-    border-radius: 15px;
+    .res-text-white {
+        color: $white !important;
+    }
 }
