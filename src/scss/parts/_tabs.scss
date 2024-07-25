@@ -1,17 +1,18 @@
 .tab-container {
     .tab-menu {
         a {
-            height: 74px;
-            background-color: $white;
-            color: $color-139cd5;
+            @include media-breakpoint-up(lg) {
+                height: 74px;
+                background-color: $white;
+                color: $color-139cd5;
 
-            &.active {
-                background-color: $color-013945;
-                color: $white;
+                &.active {
+                    background-color: $color-013945;
+                    color: $white;
+                }
             }
 
             &.tab-btn {
-
                 &.active {
                     background-color: $color-013945;
                     color: $white;

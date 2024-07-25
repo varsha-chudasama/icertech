@@ -50,6 +50,7 @@
     background-color: $color-ffffff30;
 }
 
+
 // text ===============================
 
 
@@ -148,55 +149,7 @@
 .font48 {
     font-size: $font48;
 }
-@include media-breakpoint-down(lg){
-    .res-font15 {
-        font-size: $font15;
-    }
-    
-    .res-font16 {
-        font-size: $font16;
-    }
-    
-    .res-font18 {
-        font-size: $font18;
-    }
-    
-    .res-font20 {
-        font-size: $font20;
-    }
-    
-    .res-font22 {
-        font-size: $font22;
-    }
-    
-    .res-font24 {
-        font-size: $font24;
-    }
-    
-    .res-font28 {
-        font-size: $font28;
-    }
-    
-    .res-font30 {
-        font-size: $font30;
-    }
-    
-    .res-font40 {
-        font-size: $font40;
-    }
-    
-    .res-font48 {
-        font-size: $font48;
-    }
-    .res-leading24 {
-        line-height: $leading24;
-    }
-    
-    .res-leading16 {
-        line-height: $leading16;
-    }
 
-}
 
 
 // line-height =====================
@@ -220,4 +173,62 @@
 
 .radius15 {
     border-radius: 15px;
+}
+
+@include media-breakpoint-down(lg) {
+    .res-font15 {
+        font-size: $font15;
+    }
+
+    .res-font16 {
+        font-size: $font16;
+    }
+
+    .res-font18 {
+        font-size: $font18;
+    }
+
+    .res-font20 {
+        font-size: $font20;
+    }
+
+    .res-font22 {
+        font-size: $font22;
+    }
+
+    .res-font24 {
+        font-size: $font24;
+    }
+
+    .res-font28 {
+        font-size: $font28;
+    }
+
+    .res-font30 {
+        font-size: $font30;
+    }
+
+    .res-font40 {
+        font-size: $font40;
+    }
+
+    .res-font48 {
+        font-size: $font48;
+    }
+
+    .res-leading24 {
+        line-height: $leading24;
+    }
+
+    .res-leading16 {
+        line-height: $leading16;
+    }
+
+    .res-bg-transparent {
+        background-color: transparent !important;
+    }
+
+    .res-text-white {
+        color: $white !important;
+    }
 }
