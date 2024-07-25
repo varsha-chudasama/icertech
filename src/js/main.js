@@ -9,6 +9,7 @@ import { Plugins } from './parts/plugins.js'
 import { Parts } from './parts/parts.js'
 import { Header } from './parts/header.js';
 import { Tabs } from './parts/tabs.js';
+import { Slick } from './parts/slick.js';
 
 
 // export for others scripts to use
@@ -40,6 +41,9 @@ $(function () {
 
   window.tabs = new Tabs();
   window.tabs.init();
+
+  window.slick = new Slick();
+  window.slick.init();
 });
 
 // ===========================================================================

@@ -20560,7 +20560,37 @@ var Tabs = /*#__PURE__*/function () {
   }]);
   return Tabs;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/slick.js
+function slick_typeof(obj) { "@babel/helpers - typeof"; return slick_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, slick_typeof(obj); }
+function slick_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function slick_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, slick_toPropertyKey(descriptor.key), descriptor); } }
+function slick_createClass(Constructor, protoProps, staticProps) { if (protoProps) slick_defineProperties(Constructor.prototype, protoProps); if (staticProps) slick_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function slick_toPropertyKey(arg) { var key = slick_toPrimitive(arg, "string"); return slick_typeof(key) === "symbol" ? key : String(key); }
+function slick_toPrimitive(input, hint) { if (slick_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (slick_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Slick = /*#__PURE__*/function () {
+  function Slick() {
+    slick_classCallCheck(this, Slick);
+  }
+  slick_createClass(Slick, [{
+    key: "init",
+    value: function init() {
+      $(document).ready(function () {
+        $(".history-slider").slick({
+          dots: false,
+          autoplay: false,
+          arrows: false,
+          slideToShow: 2,
+          slideToScroll: 2,
+          infinite: false,
+          draggable: true
+        });
+      });
+    }
+  }]);
+  return Slick;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -20594,6 +20624,8 @@ jquery_default()(function () {
   window.header.init();
   window.tabs = new Tabs();
   window.tabs.init();
+  window.slick = new Slick();
+  window.slick.init();
 });
 
 // ===========================================================================

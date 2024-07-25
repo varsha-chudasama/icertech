@@ -1,0 +1,16 @@
+.about-us {
+    .about-picture {
+        height: 773px;
+    }
+
+    .left-right-section {
+        .left-img {
+            height: 631px;
+
+            @include media-breakpoint-down(lg) {
+                height: auto;
+            }
+        }
+    }
+}
+

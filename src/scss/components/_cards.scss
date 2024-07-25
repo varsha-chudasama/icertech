@@ -20,16 +20,31 @@
     }
 }
 
-.shop-card {
+.shop-card,
+.ice-card,
+.sundry-card {
     height: 458px;
 
-    .shop-card-img {
+    @include media-breakpoint-down(md) {
+        height: 362px;
+    }
+
+    .shop-card-img,
+    .ice-card-img,
+    .sundry-card-img {
         height: 303px;
-        width:303px;
+
+        @include media-breakpoint-up(md) {
+            height: auto;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 213px;
+        }
     }
 
     &:hover {
         background-color: $color-139cd5 !important;
-        color: $white !important    ;
+        color: $white !important;
     }
 }

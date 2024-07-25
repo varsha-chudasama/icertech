@@ -16,6 +16,9 @@
                     background-color: $color-013945;
                     color: $white;
                 }
+                &.active:hover{
+                    border: 2px solid $color-013945;
+                }
 
                 background-color: $color-139cd5 ;
                 color: $white;
@@ -23,7 +26,7 @@
                 &:hover {
                     background-color: transparent;
                     color: $color-139cd5;
-                    border: 1px solid $color-139cd5;
+                    border: 2px solid $color-139cd5;
                 }
             }
         }
