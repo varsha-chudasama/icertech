@@ -53,16 +53,19 @@
 
                             &::after {
                                 content: "";
-                                position: absolute;
-                                bottom: -85px;
-                                left: 0;
-                                height: 50px;
-                                width: 50px;
-                                transform: rotate(45deg);
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 0 25px 20px;
+                                border-color: transparent transparent #139cd5;
                                 opacity: 0;
                                 visibility: hidden;
-                                background-color: $color-139cd5;
-                                transition: all 0.2s ease-in-out;
+                                position: absolute;
+                                bottom: -52px;
+                                left: 0;
+                                // background-color: $color-139cd5;
+                                transition: all 0.3s ease-in-out;
 
                                 @include media-breakpoint-down(lg) {
                                     display: none;
